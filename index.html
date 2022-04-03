@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>ASD Grigioneri 2000</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalized link -->
+    <link rel="stylesheet" href="./normalize.css" />
+
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <!-- IonIcons link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Queries CSS link -->
+    <link rel="stylesheet" href="./queries.css" />
+  </head>
+
+  <body id="body">
+    <!-- Cookie section -->
+    <div id="cookieContainer">
+      <ion-icon name="close-sharp" onclick="closeCookieSection()"></ion-icon>
+      <div class="cookieText">
+        <img src="./images/logoGrigioneri2000.png" alt="Logo Grigioneri 2000" />
+        <h3>Testo informativa sull'uso dei cookie</h3>
+        <p>
+          Il presente sito web utilizza <u>cookie tecnici</u> per garantire il
+          corretto funzionamento delle procedure e migliorare l'esperienza di
+          uso delle applicazioni online.
+        </p>
+      </div>
+    </div>
+
+    <!-- Navbar section -->
+    <header id="header">
+      <nav id="nav">
+        <div id="navContainer">
+          <!-- Left nav menù -->
+          <div class="leftNavContainer">
+            <img
+              id="grigioneriLogo"
+              src="images/logoGrigioneri2000.png"
+              alt="Logo Grigioneri 2000"
+            />
+            <p id="grigioneriSignature">ASD Grigioneri 2000</p>
+          </div>
+
+          <!-- Right nav menù -->
+          <div class="rightNavContainer">
+            <a class="rightNavElement" href="#history">Storia</a>
+            <a class="rightNavElement" href="#members">Consiglieri</a>
+            <a class="rightNavElement" href="#contactUs">Contatti</a>
+          </div>
+
+          <!-- Responsive signature -->
+          <div class="res-SignatureContainer">
+            <p>ASD Grigioneri 2000</p>
+          </div>
+
+          <!-- Responsive menù -->
+          <div class="res-HamburgerContainer">
+            <ion-icon
+              id="hamburgerIcon"
+              name="menu-sharp"
+              onclick="resHamburgerMenu()"
+            ></ion-icon>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Presentation section -->
+      <div id="presentationContainerID" class="presentationContainer">
+        <div class="presentationItem">
+          <h1>ASD Grigioneri 2000</h1>
+          <p>Una vita di passione e compagnia</p>
+
+          <svg style="display: none">
+            <symbol id="arrow-right" viewBox="0 0 20 10">
+              <path
+                d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"
+              ></path>
+            </symbol>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Responsive background image -->
+      <div class="res-presentationContainer">
+        <img
+          src="./images/backgroundPresentation.jpg"
+          alt="Foto di rappresentanza Grigioneri 2000"
+        />
+      </div>
+
+      <div class="arrow bounce">
+        <a class="fa fa-arrow-down fa-2x" href="#history"></a>
+      </div>
+    </header>
+
+    <!-- Hamburger menu -->
+
+    <div id="resMenuVoices">
+      <div id="resMenuVoicesCon">
+        <a class="resMenuVoice" href="#history" onclick="instantHamburgerMenu()"
+          >Storia</a
+        >
+        <a class="resMenuVoice" href="#members" onclick="instantHamburgerMenu()"
+          >Consiglieri</a
+        >
+        <a
+          class="resMenuVoice"
+          href="#contactUs"
+          onclick="instantHamburgerMenu()"
+          >Contatti</a
+        >
+      </div>
+    </div>
+
+    <!-- History section -->
+
+    <div id="history" class="partition historyPartition"></div>
+
+    <div class="historyContainer">
+      <h2 id="historyHeading">Storia</h2>
+
+      <div id="historyParagraph">
+        Ben <span class="bolder">22 anni</span> fa
+        <span class="italic">Enzo</span> e
+        <span class="italic">Claudio Genio</span>,
+        <span class="italic">Polo Libero</span>,
+        <span class="italic">Nerino Fiorito</span>,
+        <span class="italic">Fiori Venuti</span>,
+        <span class="italic">Giordano Tarnold</span>,
+        <span class="italic">Stefano Sudaro</span>,
+        <span class="italic">Emilio Sich</span>,
+        <span class="italic">Daniele Ghiraldo</span> e
+        <span class="italic">Angelo Crucil</span> uniti dalla passione per le
+        due ruote decisero di fondare i
+        <span class="bolder">Grigioneri 2000 la Torate</span>. Purtroppo oggi
+        <span class="italic">Giordano Tarnold</span>, uno dei primi padri
+        fondatori non è più tra noi ed è proprio a lui che i soci del team hanno
+        deciso di dedicare la gara sociale di mtb che ogni anno si tiene presso
+        gli splendidi paesaggi di
+        <span class="bolder">Savorgnano del Torre</span>.
+        <span class="bolder">Passione</span>,
+        <span class="bolder">amicizia</span> e
+        <span class="bolder">rispetto</span> sono i valori sostenuti dalla
+        società che con il passare degli anni ha vissuto grandi cambiamenti
+        contando oggi <span class="bolder">44 soci</span> di tutte le età e
+        coinvolgendo inoltre anche diversi amici simpatizzanti. Ogni sabato e
+        domenica un nutrito gruppo si riunisce per svolgere attività su strada o
+        in mtb cercando di affrontare nuovi
+        <span class="bolder">sentieri</span>,
+        <span class="bolder">dislivelli</span> e macinando un buon numero di
+        <span class="bolder">chilometri</span>. Diversi sono i soci che
+        partecipano alle <span class="bolder">gare</span> che vengono
+        organizzate sia in zona ma anche fuori regione con ottimi risultati. Al
+        di là della passione per le due ruote è la profonda amicizia che lega i
+        membri del gruppo e danno vita ad un
+        <span class="bolder">ambiente accogliente</span> e
+        <span class="bolder">piacevole</span> non solo nei momenti in sella alla
+        propria bicicletta, ma soprattutto nella quotidianità.
+      </div>
+
+      <div id="res-historyParagraph">
+        <div class="historyCarouselBox" class="mySlides">
+          <div class="res-historyHead">
+            <ion-icon
+              name="chevron-back-outline"
+              id="leftStoryRow"
+              onclick="plusSlides(-1)"
+              style="visibility: hidden"
+            ></ion-icon>
+            <div class="carouselHeadContainer">
+              <h3 id="carouselHead">Il passato</h3>
+              <p id="carouselPage">1/3</p>
+            </div>
+            <ion-icon
+              name="chevron-forward-outline"
+              id="rightStoryRow"
+              onclick="plusSlides(+1)"
+            ></ion-icon>
+          </div>
+          <div id="carouselText" class="res-historyText">
+            Ben <span class="bolder">22 anni </span> fa
+            <span class="italic">Enzo</span> e
+            <span class="italic">Claudio Genio</span>,
+            <span class="italic">Polo Libero</span>,
+            <span class="italic">Nerino Fiorito</span>,
+            <span class="italic">Fiori Venuti</span>,
+            <span class="italic">Giordano Tarnold</span>,
+            <span class="italic">Stefano Sudaro</span>,
+            <span class="italic">Emilio Sich</span>,
+            <span class="italic">Daniele Ghiraldo</span> e
+            <span class="italic">Angelo Crucil</span>
+            uniti dalla passione per le due ruote decisero di fondare i
+            <span class="bolder">Grigioneri 2000 la Torate</span>. Purtroppo
+            oggi <span class="italic">Giordano Tarnold</span>, uno dei primi
+            padri fondatori non è più tra noi ed è proprio a lui che i soci del
+            team hanno deciso di dedicare la gara sociale di mtb che ogni anno
+            si tiene presso gli splendidi paesaggi di
+            <span class="bolder">Savorgnano del Torre</span>.
+          </div>
+        </div>
+
+        <img
+          id="carouselImg"
+          src="./images/storia.jpg"
+          alt="Carosello Grigioneri 2000"
+        />
+      </div>
+    </div>
+
+    <div class="partition customPartition"></div>
+
+    <div class="historyItemContainer">
+      <div
+        class="historyItem"
+        onmouseover="zoomIn(this)"
+        onmouseout="zoomOut(this)"
+      >
+        <h2 id="membersCounter">0</h2>
+        <p>Membri</p>
+      </div>
+
+      <div
+        class="historyItem"
+        onmouseover="zoomIn(this)"
+        onmouseout="zoomOut(this)"
+      >
+        <h2 id="founders">0</h2>
+        <p>Fondatori</p>
+      </div>
+
+      <div
+        class="historyItem"
+        onmouseover="zoomIn(this)"
+        onmouseout="zoomOut(this)"
+      >
+        <h2 id="yearsCounter">0</h2>
+        <p>Anni</p>
+      </div>
+    </div>
+
+    <!-- Members section -->
+
+    <div id="members" class="partition"></div>
+
+    <div class="membersContainer">
+      <h2 id="membersHeading" class="membersHead res-MembersHeading">
+        Consiglieri
+      </h2>
+      <div class="membersPictureContainer">
+        <img
+          src="./images/consiglio.jpg"
+          alt="Membri del consiglio Grigioneri 2000"
+        />
+      </div>
+
+      <div class="res-AllMembersPicture">
+        <h2 class="membersHead laptop-MembersHeading">Consiglieri</h2>
+      </div>
+
+      <div class="membersItemsContainer">
+        <div class="member secretaryMember">
+          <div class="memberInfo">
+            <div>Gianni Patriarca</div>
+            <div class="title">Segretario</div>
+          </div>
+        </div>
+
+        <div class="member vicepresidentMember">
+          <div class="memberInfo">
+            <div>Davide Marchiol</div>
+            <div class="title">Vicepresidente</div>
+          </div>
+        </div>
+
+        <div class="member presidentMember">
+          <div class="memberInfo">
+            <div>Emiliano Tulisso</div>
+            <div class="title">Presidente</div>
+          </div>
+        </div>
+
+        <div class="member hononaryPresidentMember">
+          <div class="memberInfo">
+            <div>Enzo Genio</div>
+            <div class="title">Presidente onorario</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="contactUs"
+      class="partition contactUsPartition"
+      style="background-color: var(--white)"
+    ></div>
+
+    <!-- Contacts section -->
+    <div class="contactsContainer">
+      <div class="contactsBoxImage">
+        <h2 id="contactsHeading">Contatti</h2>
+
+        <div class="contactsDescription">
+          <img src="images/logoGrigioneri2000.png" alt="Logo Grigioneri 2000" />
+          <h3 id="contactsBottomHeading">
+            Entra a far parte della nostra squadra!
+          </h3>
+          <h3 id="resContactsBottomHeading">Non esitare a contattarci!</h3>
+        </div>
+      </div>
+
+      <div class="infosContainer">
+        <div class="contactBox firstContactBox">
+          <div class="contactSection">
+            <ion-icon name="mail-unread-outline"></ion-icon>
+            <h3>Inviaci una mail</h3>
+          </div>
+
+          <div class="contactInfoAnimation">
+            <ion-icon name="mail-open-outline"></ion-icon>
+            <h2>Scrivici</h2>
+            <a href="mailto:grigioneri2000@gmail.com" class="contactInfoBtn">
+              <span>grigioneri2000@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contactBox middleContactBox">
+          <div class="contactSection facebookContactSec">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <h3>Seguici su Facebook</h3>
+          </div>
+
+          <div class="contactInfoAnimation facebookContactSec">
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+            <h2>Non perderti nulla</h2>
+            <a
+              href="https://www.facebook.com/ASD-Grigioneri-2000-286689095337803/"
+              class="facebookBtn"
+              target="_blank"
+              >Facebook</a
+            >
+          </div>
+
+          <div class="res-contactSection">
+            <a
+              href="https://www.facebook.com/ASD-Grigioneri-2000-286689095337803/"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+              <h3>Seguici su Facebook</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="contactBox lastContactBox">
+          <div class="contactBox">
+            <div class="contactSection stravaContactSec">
+              <i class="fab fa-strava"></i>
+              <h3>Seguici su Strava</h3>
+            </div>
+
+            <div class="contactInfoAnimation stravaContactSec">
+              <ion-icon name="bicycle-outline"></ion-icon>
+              <h2>Tieni il passo</h2>
+              <a
+                href="https://www.strava.com/clubs/317605/leaderboard"
+                class="stravaBtn"
+                target="_blank"
+                >Strava</a
+              >
+            </div>
+
+            <div class="res-contactSection">
+              <a
+                href="https://www.strava.com/clubs/317605/leaderboard"
+                target="_blank"
+              >
+                <i class="fab fa-strava"></i>
+                <h3>Seguici su Strava</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer style="position: relative">
+      <div class="homeScroll">
+        <a href="#header">
+          <ion-icon name="chevron-up-outline"></ion-icon>
+        </a>
+      </div>
+
+      <div class="footerContainer">
+        <div class="leftFooterContainer">ASD Grigioneri 2000</div>
+        <div class="centerFooterContainer">
+          <ion-icon name="color-palette-outline" style="font-size: 24px; margin-left: 5px"></ion-icon>
+          Designed by Luca Cucchiaro
+        </div>
+
+        <div class="footerLinks">
+          <a href="#history">Storia</a>
+          <span>&#8226;</span>
+          <a href="#members">Consiglio</a>
+          <span>&#8226;</span>
+          <a href="#contactUs">Contatti</a>
+        </div>
+      </div>
+
+      <div class="res-footerContainer">
+        <div class="pagesContainer">
+          <h3>Sezioni</h3>
+          <a href="#history">Storia</a>
+          <a href="#members">Consiglieri</a>
+          <a href="#contactUs">Contatti</a>
+        </div>
+
+        <div class="footerInfos">
+          <p id="footerSignature">ASD Grigioneri 2000</p>
+          <p id="powered">Designed by Luca Cucchiaro</p>
+
+          <div class="wrapper">
+            <div class="icon email">
+              <div class="tooltip">Email</div>
+              <a href="mailto:grigioneri2000@gmail.com" target="_blank"
+                ><span><i class="fas fa-at"></i></span
+              ></a>
+            </div>
+            <div class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <a
+                href="https://www.facebook.com/ASD-Grigioneri-2000-286689095337803/"
+                target="_blank"
+                ><span><i class="fab fa-facebook-f"></i></span
+              ></a>
+            </div>
+            <div class="icon twitter">
+              <div class="tooltip">Strava</div>
+              <a
+                href="https://www.strava.com/clubs/317605/leaderboard"
+                target="_blank"
+                ><span><i class="fab fa-strava"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+
+    <!-- CountUp JS -->
+    <script src="./node_modules/countup.js/dist/countUp.min.js"></script>
+  </body>
+</html>

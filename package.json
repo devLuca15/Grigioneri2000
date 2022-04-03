@@ -1,0 +1,14 @@
+{
+  "name": "grigioneri2000",
+  "version": "1.0.0",
+  "description": "Grigioneri 2000 official site",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Cucchiaro",
+  "license": "ISC",
+  "dependencies": {
+    "countup.js": "^1.9.3"
+  }
+}
