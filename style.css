@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 :root {
   --customBlack: #333333;
@@ -11,7 +11,7 @@
   --bg: #f22c3a;
 
   --color-primary: #002626;
-  --color-secondary: #F0F7EE;
+  --color-secondary: #f0f7ee;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -82,7 +82,9 @@ body {
   margin-top: 10px;
 }
 
-.cookieText h3, .cookieText p, #cookieContainer ion-icon {
+.cookieText h3,
+.cookieText p,
+#cookieContainer ion-icon {
   color: var(--white);
 }
 
@@ -94,7 +96,8 @@ body {
 
 header {
   width: 100%;
-  background: url(./images/backgroundPresentation.jpg) no-repeat fixed center 60%;
+  background: url(./images/backgroundPresentation.jpg) no-repeat fixed center
+    60%;
   background-size: cover;
 }
 
@@ -176,9 +179,11 @@ nav {
   left: 0;
 }
 
-.fa, .fa-arrow-down, .fa-2x { 
-  color: var(--white); 
-  text-decoration: none; 
+.fa,
+.fa-arrow-down,
+.fa-2x {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .arrow {
@@ -192,7 +197,8 @@ nav {
   animation: bounce 2s infinite;
 }
 
-.arrow, .bounce {
+.arrow,
+.bounce {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -202,7 +208,11 @@ nav {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -317,11 +327,13 @@ nav {
   background-color: var(--white);
 }
 
-#historyHeading {
+#historyHeading,
+#updatesHeading {
   margin-top: 30px;
 }
 
-#historyParagraph, #res-historyParagraph {
+#historyParagraph,
+#res-historyParagraph {
   width: 90%;
   line-height: 28px;
   margin-top: 30px;
@@ -470,7 +482,10 @@ nav {
   background: url(images/presOn1.jpg);
 }
 
-.secretaryMember, .vicepresidentMember, .presidentMember, .hononaryPresidentMember {
+.secretaryMember,
+.vicepresidentMember,
+.presidentMember,
+.hononaryPresidentMember {
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
@@ -516,14 +531,14 @@ nav {
 }
 
 .contactsBoxImage::before {
-   content: "";
-   position: absolute;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   background-color: rgba(0, 0, 0, 0.75);
- }
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
 
 .contactsBoxImage img {
   position: relative;
@@ -549,7 +564,8 @@ nav {
   padding-bottom: 30px;
 }
 
-#contactsBottomHeading, #resContactsBottomHeading {
+#contactsBottomHeading,
+#resContactsBottomHeading {
   font-size: 35px;
   position: relative;
   text-align: center;
@@ -593,7 +609,9 @@ nav {
   text-decoration: none;
 }
 
-.contactBox i, .contactSection ion-icon, .res-contactSection ion-icon{
+.contactBox i,
+.contactSection ion-icon,
+.res-contactSection ion-icon {
   font-size: 50px;
 }
 
@@ -646,7 +664,8 @@ nav {
   color: var(--customBlack);
 }
 
-.facebookBtn, .stravaBtn {
+.facebookBtn,
+.stravaBtn {
   width: 50%;
   margin-top: 20px;
   font-style: italic;
@@ -664,7 +683,8 @@ nav {
   background: #fc4c02;
 }
 
-.stravaBtn:hover, .facebookBtn:hover {
+.stravaBtn:hover,
+.facebookBtn:hover {
   text-decoration: underline;
 }
 
@@ -769,7 +789,8 @@ nav {
   flex-wrap: nowrap;
 }
 
-#footerSignature, #powered {
+#footerSignature,
+#powered {
   font-style: italic;
 }
 
@@ -852,7 +873,8 @@ footer {
 }
 
 /* Global components */
-#historyHeading, #membersHeading {
+#historyHeading,
+#membersHeading {
   font-size: 25px;
 }
 
@@ -863,4 +885,12 @@ footer {
 
 .customPartition {
   margin-top: 35px;
+}
+
+#raceUpdates {
+  width: 70%;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 10px;
 }
